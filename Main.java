@@ -7,20 +7,24 @@ public class Main{
   public static void main(String[] args){
     Scanner in = new Scanner(System.in);
     Vector<String> vec = new Vector<String>();
+
+    // Add Elements in Vector
     vec.add("Hello");
     vec.add("Hello1");
-    
     debug(vec);
-
     vec.clear();
 
+    // Add New Elements in Vector
     vec.add("b");
     vec.add("a");
-
     debug(vec);
 
+    // Sort the elements in vector
     Collections.sort(vec);
+    debug(vec);
 
+    // Sort the elements in reverse
+    Collections.sort(vec,Collections.reverseOrder());
     debug(vec);
   }
 
