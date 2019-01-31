@@ -1,37 +1,13 @@
 import java.util.Scanner;
-import java.util.Vector;
-import java.util.Collections;
+import java.lang.Math;
 
 public class Main{
-
   public static void main(String[] args){
-    Scanner in = new Scanner(System.in);
-    Vector<String> vec = new Vector<String>();
+    double n = 6.425523;
+    // Default Round Off
+    System.out.println(Math.round(n));
 
-    // Add Elements in Vector
-    vec.add("Hello");
-    vec.add("Hello1");
-    debug(vec);
-    vec.clear();
-
-    // Add New Elements in Vector
-    vec.add("b");
-    vec.add("a");
-    debug(vec);
-
-    // Sort the elements in vector
-    Collections.sort(vec);
-    debug(vec);
-
-    // Sort the elements in reverse
-    Collections.sort(vec,Collections.reverseOrder());
-    debug(vec);
-  }
-
-  public static void debug(Vector<String> vec){
-    for(int i=0; i<vec.size(); i++){
-      System.out.print(vec.get(i) + " ");
-    }
-    System.out.println();
+    // Custom Round Off
+    System.out.printf("%.3f",n);
   }
 }
