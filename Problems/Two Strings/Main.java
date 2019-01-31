@@ -25,7 +25,7 @@ public static String sort(String str){
       while (st.hasMoreTokens()) {
         vec.add(sort(st.nextToken()));
       }
-      
+
       if(vec.get(0).equals(vec.get(1)))
         System.out.println("YES");
       else
