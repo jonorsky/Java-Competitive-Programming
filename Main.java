@@ -1,13 +1,11 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
-public class Main{
-  public static void main(String[] args){
-    int i=5;
-    do{
-    System.out.println("Hello Word");
-    i--;
-  } while(i!=1);
-
-
+class Main{
+  static void stack_push(Stack<Integer> stack){
+    for(int i=0; i<5; i++){
+      stack.push(i);
+    }
   }
+
 }
