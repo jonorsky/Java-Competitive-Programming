@@ -8,8 +8,14 @@ class Main{
     }
   }
 
+  static void print_top(Stack<Integer> stack){
+      System.out.println(stack.peek());
+  }
 
   public static void main(String[] args){
-    
+    Stack<Integer> arr = new Stack<Integer>();
+    stack_push(arr);
+    print_top(arr);
+
   }
 }
