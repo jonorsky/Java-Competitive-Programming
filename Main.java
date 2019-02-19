@@ -7,9 +7,11 @@ class Main{
       stack.push(i);
     }
   }
+
   static void print_top(Stack<Integer> stack){
       System.out.println(stack.peek());
   }
+
   static void delete_top(Stack<Integer> stack){
     stack.pop();
   }
