@@ -21,5 +21,12 @@ public class Main{
     for(int i=0; i<str.length(); i++){
       System.out.println(str.charAt(i));
     }
+    StringBuilder sb = new StringBuilder("Hello World");
+    sb.append(" Java");
+    System.out.println(sb);
+    sb.insert(1,"xx");
+    System.out.println(sb);
+    sb.replace(1,2,"");
+    System.out.println(sb);
   }
 }
