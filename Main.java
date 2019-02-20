@@ -26,7 +26,10 @@ public class Main{
     System.out.println(sb);
     sb.insert(1,"xx");
     System.out.println(sb);
-    sb.replace(1,2,"");
+    sb.replace(1,3,"");
     System.out.println(sb);
+    String str1 = "GRF";
+    StringBuilder strb = new StringBuilder(str1);
+    System.out.println(strb);
   }
 }
