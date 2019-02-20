@@ -17,5 +17,9 @@ public class Main{
     for(byte temp: x){
       System.out.println(temp);
     }
+    String str = "test";
+    for(int i=0; i<str.length(); i++){
+      System.out.println(str.charAt(i));
+    }
   }
 }
