@@ -68,6 +68,5 @@ public class Main{
       System.out.println(i + "\n");
     }
 
-    // System.out.println(obj);
   }
 }
