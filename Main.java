@@ -32,10 +32,6 @@ class Person{
 public class Main{
   public static void main(String[] args){
 
-    String str = "edabun";
-
-    str[1] = "x";
-
     Person obj = new Person();
     obj.setName("Edabun");
     obj.setId(201523231);
