@@ -55,9 +55,10 @@ public class Main{
       System.out.println("Student # " + (i+1));
       arr[i] = new Person();
       System.out.print("Input Name: ");
-      arr[i].setName(in.next());
+      arr[i].setName(in.nextLine());
       System.out.print("Input ID: ");
       arr[i].setId(in.nextInt());
+      in.nextLine();
       System.out.print("Input Course: ");
       arr[i].setCourse(in.next());
       System.out.println();
