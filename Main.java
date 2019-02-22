@@ -1,12 +1,12 @@
-class Person{
-  String name;
-}
+import java.util.Arrays;
 
 public class Main{
   public static void main(String[] args){
-    Person names[] = new Person[5];
-    names[0] = new Person();
-    names[0].name = "Edbert";
-    System.out.println(names[0].name);
+    String[][] x = new String[5][2];
+    String[][] y = new String[5][2];
+
+    String z[][] = x;
+
+    System.out.println(Arrays.deepEquals(z,y));
   }
 }
