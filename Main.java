@@ -2,11 +2,12 @@ import java.util.Arrays;
 
 public class Main{
   public static void main(String[] args){
-    String[][] x = new String[5][2];
-    String[][] y = new String[5][2];
-
-    String z[][] = x;
-
-    System.out.println(Arrays.deepEquals(z,y));
+    StringBuilder str[] = new StringBuilder[5];
+    for(int i=0; i<str.length; i++){
+      str[i] = new StringBuilder("" + i);
+    }
+    for(StringBuilder temp : str){
+      System.out.println(temp);
+    }
   }
 }
