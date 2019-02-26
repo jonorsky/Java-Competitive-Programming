@@ -8,5 +8,11 @@ public class Main{
     creatures.add(1,"Human");
     System.out.println(creatures);
 
+    ArrayList<String> cuddles = new ArrayList<String>();
+    cuddles.add("1");
+    cuddles.add("2");
+
+    creatures.addAll(2,cuddles);
+    System.out.println(creatures);
   }
 }
