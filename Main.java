@@ -1,12 +1,10 @@
-import java.util.Scanner;
-
-class Person{
-  private String name;
-  private static final String SCHOOL = "Ateneo de Naga";
-}
+import java.util.ArrayList;
 
 public class Main{
   public static void main(String[] args){
-    Scanner in = new Scanner(System.in);
+    ArrayList list1 = new ArrayList();
+    ArrayList list2 = new ArrayList(5);
+
+    ArrayList<String> list3 = new ArrayList<String>();
   }
 }
