@@ -14,6 +14,10 @@ class Library{
   public void addBook(Book book){
     books.add(book);
   }
+
+  public List getBooks(){
+    return books;
+  }
 }
 
 public class Main{
