@@ -10,6 +10,10 @@ class Library{
   public Book getBook(int index){
     return books.get(index);
   }
+
+  public void addBook(Book book){
+    books.add(book);
+  }
 }
 
 public class Main{
