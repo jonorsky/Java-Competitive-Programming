@@ -16,7 +16,11 @@ class Library{
   }
 
   public List getBooks(){
-    return books;
+    ArrayList list = new ArrayList(books.size());
+    for(Book book : books){
+      list.add(new Book(book));
+    }
+    return list;
   }
 }
 
