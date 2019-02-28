@@ -10,6 +10,10 @@ public class Main{
     System.out.println(list.contains("cat"));
 
     for(String pivot: list){
+      pivot = "Hey";
+    }
+
+    for(String pivot : list){
       System.out.println(pivot);
     }
   }
