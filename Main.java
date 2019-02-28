@@ -8,5 +8,9 @@ public class Main{
 
     System.out.println(list.indexOf("cat"));
     System.out.println(list.contains("cat"));
+
+    for(String pivot: list){
+      System.out.println(pivot);
+    }
   }
 }
