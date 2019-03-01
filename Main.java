@@ -12,5 +12,6 @@ public class Main{
         sum += number;
       }
     }while(number>0);
+    System.out.println("The sum is " + sum);
   }
 }
