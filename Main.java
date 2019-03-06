@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Employee{
-  public String name;
+  private String name;
   private int age;
 
   public int getAge(){
