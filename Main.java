@@ -1,10 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
-  static int recursion(int n){
-
-  }
-
+public class Main extends Thread{
   public static void main(String[] args){
 
   }
