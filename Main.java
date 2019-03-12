@@ -13,9 +13,11 @@ public class Main{
     try{
     BufferedReader br = new BufferedReader(new FileReader(file));
     String st;
-    while ((st = br.readLine()) != null)
+    while ((st = br.readLine()) != null){
+      System.out.println(st);
+    }
     
-    } catch(IOException e){
+    }catch(IOException e){
 
     }
 
