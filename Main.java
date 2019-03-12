@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.File;
+import java.util.StringTokenizer;
 
 public class Main{
   public static void main(String[] args){
@@ -14,9 +15,14 @@ public class Main{
     BufferedReader br = new BufferedReader(new FileReader(file));
     String st;
     while ((st = br.readLine()) != null){
-      System.out.println(st);
+
+      StringTokenizer st1 = new StringTokenizer(st, " ");
+        while (st1.hasMoreTokens())
+            System.out.print(st1.nextToken());
+
+        System.out.println();
     }
-    
+
     }catch(IOException e){
 
     }
