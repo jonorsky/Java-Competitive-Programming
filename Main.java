@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.File;
 import java.util.StringTokenizer;
 import java.io.InputStreamReader;
+import java.util.Collections;
 
 public class Main{
   public static void main(String[] args){
@@ -22,27 +23,19 @@ public class Main{
         StringTokenizer st1 = new StringTokenizer(st, " ");
         while (st1.hasMoreTokens()){
           list.add(Integer.parseInt(st1.nextToken()));
-          //System.out.print(Integer.parseInt(st1.nextToken()));
         }
+        Collections.sort(list);
         vec.add(list.get(1));
         list.clear();
       }
-      for(int x : vec)
-        System.out.println(x);
-
       long sum=0;
-      //if(list.size()%2!=0){
-      //System.out.println(list.size());
-      //  System.out.println(list.size()%2);
-      //}
-    //  System.out.println(list.get(1));
-
-
-    }catch(IOException e){
-
-    }
-
-
-
+      if(vec.size()%2 != 0){
+        Collections.sort(vec);
+        System.out.println(vec.get(vec.size()/2));
+      }
+      else{
+        System.out.println( (  vec.get((vec.size()/2)-1) + vec.get(vec.size()/2)  ) / 2.0  );
+      }
+    }catch(IOException e){}
   }
 }
