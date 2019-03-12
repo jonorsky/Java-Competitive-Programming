@@ -8,21 +8,20 @@ import java.util.StringTokenizer;
 
 public class Main{
   public static void main(String[] args){
-
     File file = new File("C:\\Users\\Admin\\Desktop\\jav\\hey.txt");
 
     try{
-    BufferedReader br = new BufferedReader(new FileReader(file));
-    String st;
-    while ((st = br.readLine()) != null){
-
-      StringTokenizer st1 = new StringTokenizer(st, " ");
-        while (st1.hasMoreTokens())
-            System.out.print(st1.nextToken());
-
-        System.out.println();
-    }
-
+      BufferedReader br = new BufferedReader(new FileReader(file));
+      String st;
+      ArrayList<Integer> list = new ArrayList<Integer>();
+      while ((st = br.readLine()) != null){
+        StringTokenizer st1 = new StringTokenizer(st, " ");
+        while (st1.hasMoreTokens()){
+        //  list.add(Integer.parseInt(st1.nextToken()));
+          System.out.print(Integer.parseInt(st1.nextToken()));
+        }
+        //System.out.println(list.get(1));
+      }
     }catch(IOException e){
 
     }
