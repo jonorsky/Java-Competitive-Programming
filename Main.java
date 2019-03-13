@@ -28,12 +28,14 @@ final class Header{
           "Version: " + this.version + "\n" +
           "Date: " + this.date + "\n";
   }
-
 }
 
 public class Main{
   public static void main(String[] args){
     Header hd = new Header("SP Project",1,new java.util.Date());
     System.out.println(hd);
+    Header hd1 = new Header("Graduation Day",2,new java.util.Date());
+    System.out.println(hd1);
+
   }
 }
