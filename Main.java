@@ -6,6 +6,7 @@ public class Main{
       throw new Exception();
     }catch(Exception e){
       System.out.println(e);
+      e.printStackTrace();
     }
   }
 }
